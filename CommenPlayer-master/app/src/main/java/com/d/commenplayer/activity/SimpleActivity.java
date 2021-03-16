@@ -230,6 +230,8 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                                     String Comand = "15";
                                     sendData(sendMingling(Length, Comand, data));
                                     Toast.makeText(SimpleActivity.this, "终端号: " + a + ", 信道号: " + b, Toast.LENGTH_SHORT).show();
+                                    textView_ComStatus.setText("正在呼叫。。。。");
+
                                 }
                             });
                             builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
@@ -739,6 +741,47 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
             switch (count) {
                 case 1:
                     Toast.makeText(SimpleActivity.this, "亮度按键", Toast.LENGTH_SHORT).show();
+                    AlertDialog.Builder builder10 = new AlertDialog.Builder(SimpleActivity.this); //选呼接收
+                    builder10.setIcon(R.drawable.ring_icon);
+                    builder10.setTitle("选呼收");
+                    View view10 = LayoutInflater.from(SimpleActivity.this).inflate(R.layout.dialog_rev_xuanhu, null);
+                    builder10.setView(view10);
+
+                    builder10.setPositiveButton("接听", new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which)
+                        {
+                            sendData(sendMingling_nodata(3, "35"));
+                            textView_ComStatus.setText("选呼通话，按取消挂断");
+                            running = true;
+                        }
+                    });
+                    builder10.setNegativeButton("拒绝", new DialogInterface.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which)
+                        {
+                            sendData(sendMingling_nodata(3, "25"));
+                        }
+                    });
+                    builder10.setOnKeyListener(new DialogInterface.OnKeyListener() {
+                        @Override
+                        public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
+                            if (keyCode == 216 && event.getAction() == KeyEvent.ACTION_UP) { //取消按键,模拟点击屏幕取消按键的地点
+                                sendTouchEvent(678, 475);
+                                Log.i("按键输入", "dispatchKeyEvent: 输入取消");
+
+                            }
+                            if (keyCode == 215 && event.getAction() == KeyEvent.ACTION_UP) { //确认按键
+                                sendTouchEvent(742,475);
+                                Log.i("按键输入", "dispatchKeyEvent: 输入确认");
+                            }
+                            Log.i("按键输入", "onKey: "+keyCode);
+                            return false;
+                        }
+                    } );
+                    builder10.show();
                     break;
                 case 2:
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(SimpleActivity.this);
@@ -1396,7 +1439,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
         if (message.getMessage().substring(16,18).equals("12")) {
             AlertDialog.Builder builder2 = new AlertDialog.Builder(SimpleActivity.this);
             builder2.setIcon(R.drawable.ring_icon);
-            builder2.setTitle("接收到求救呼叫");
+            builder2.setTitle("收到到求救呼叫");
             View view2 = LayoutInflater.from(SimpleActivity.this).inflate(R.layout.dialog_send_qiujiu, null);
             builder2.setView(view2);
 
