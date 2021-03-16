@@ -210,8 +210,8 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                     switch (count) {
                         case 1:
                             AlertDialog.Builder builder = new AlertDialog.Builder(SimpleActivity.this); //弹窗dialog设置, 选呼按键识别，并弹窗
-                            builder.setIcon(R.drawable.ic_launcher_foreground);
-                            builder.setTitle("自选呼");
+                            builder.setIcon(R.drawable.bohao);
+                            builder.setTitle("选呼");
                             View view = LayoutInflater.from(SimpleActivity.this).inflate(R.layout.dialog_send, null);
                             builder.setView(view);
 
@@ -230,96 +230,6 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                                     String Comand = "15";
                                     sendData(sendMingling(Length, Comand, data));
                                     Toast.makeText(SimpleActivity.this, "终端号: " + a + ", 信道号: " + b, Toast.LENGTH_SHORT).show();
-
-
-//                                    AlertDialog.Builder builder2 = new AlertDialog.Builder(SimpleActivity.this);
-//                                    builder2.setIcon(R.drawable.ic_launcher_foreground);
-//                                    builder2.setTitle("通话中");
-//                                    View view2 = LayoutInflater.from(SimpleActivity.this).inflate(R.layout.dialog_send_qunhu, null);
-//                                    builder2.setView(view2);
-//
-//
-//                                    builder2.setPositiveButton("确定", new DialogInterface.OnClickListener()
-//                                    {
-//                                        EditText chuanweihufa = (EditText)view2.findViewById(R.id.qunhuhao);
-//                                        @Override
-//                                        public void onClick(DialogInterface dialog, int which)
-//                                        {
-////                                        String a = chuanweihufa.getText().toString().trim();
-////                                        int Length = 3 + a.length();
-////                                        String Comand = "1E";
-////                                        sendData(sendMingling(Length, Comand, a));
-////                                        Toast.makeText(SimpleActivity.this, "船位呼发号: " + a , Toast.LENGTH_SHORT).show();
-//                                        }
-//                                    });
-//                                    builder2.setNegativeButton("取消", new DialogInterface.OnClickListener()
-//                                    {
-//                                        @Override
-//                                        public void onClick(DialogInterface dialog, int which)
-//                                        {
-//
-//                                        }
-//                                    });
-//                                    builder2.setOnKeyListener(new DialogInterface.OnKeyListener() {
-//                                        @Override
-//                                        public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
-//                                            if (keyCode == 142 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(8);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入1");
-//                                            }
-//                                            if (keyCode == 132 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(9);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入2");
-//                                            }
-//                                            if (keyCode == 133 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(10);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入3");
-//                                            }
-//                                            if (keyCode == 134 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(11);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入=4");
-//                                            }
-//                                            if (keyCode == 135 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(12);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入5");
-//                                            }
-//                                            if (keyCode == 136 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(13);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入6");
-//                                            }
-//                                            if (keyCode == 137 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(14);
-//                                            }
-//                                            if (keyCode == 138 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(15);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入8");
-//                                            }
-//                                            if (keyCode == 139 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(16);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入9");
-//                                            }
-//                                            if (keyCode == 141 && event.getAction() == KeyEvent.ACTION_UP) {
-//                                                sendKeyCode(7);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入0");
-//                                            }
-//                                            if (keyCode == 217 && event.getAction() == KeyEvent.ACTION_UP) { //退格按键，对应翻页
-//                                                sendKeyCode(67);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入退格"); //keycode 67
-//                                            }
-//                                            if (keyCode == 216 && event.getAction() == KeyEvent.ACTION_UP) { //取消按键,模拟点击屏幕取消按键的地点
-//                                                sendTouchEvent(678, 447);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入取消");
-//
-//                                            }
-//                                            if (keyCode == 215 && event.getAction() == KeyEvent.ACTION_UP) { //确认按键
-//                                                sendTouchEvent(742,447);
-//                                                Log.i("按键输入", "dispatchKeyEvent: 输入确认");
-//                                            }
-//                                            Log.i("按键输入", "onKey: "+keyCode);
-//                                            return false;
-//                                        }
-//                                    } );
-//                                    builder2.show();
                                 }
                             });
                             builder.setNegativeButton("取消", new DialogInterface.OnClickListener()
@@ -379,19 +289,25 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                                         Log.i("按键输入", "dispatchKeyEvent: 输入退格"); //keycode 67
                                     }
                                     if (keyCode == 216 && event.getAction() == KeyEvent.ACTION_UP) { //取消按键,模拟点击屏幕取消按键的地点
-                                        sendTouchEvent(680, 495);
+                                        sendTouchEvent(582, 477);
                                         Log.i("按键输入", "dispatchKeyEvent: 输入取消");
 
                                     }
                                     if (keyCode == 215 && event.getAction() == KeyEvent.ACTION_UP) { //确认按键
-                                        sendTouchEvent(740,493);
+                                        sendTouchEvent(650,480);
                                         Log.i("按键输入", "dispatchKeyEvent: 输入确认");
                                     }
                                     Log.i("按键输入", "onKey: "+keyCode);
                                     return false;
                                 }
                             } );
-                            builder.show();
+
+                            Dialog dialog1 =  builder.create();
+                            dialog1.show();
+                            WindowManager.LayoutParams params = dialog1.getWindow().getAttributes();
+                            params.width = 400;
+                            params.height = 280;
+                            dialog1.getWindow().setAttributes(params);
                         break;
 
 //                        button1.setText("气象发");
