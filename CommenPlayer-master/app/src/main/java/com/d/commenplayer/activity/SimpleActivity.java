@@ -769,12 +769,12 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                         @Override
                         public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
                             if (keyCode == 216 && event.getAction() == KeyEvent.ACTION_UP) { //取消按键,模拟点击屏幕取消按键的地点
-                                sendTouchEvent(678, 475);
+                                sendTouchEvent(620, 500);
                                 Log.i("按键输入", "dispatchKeyEvent: 输入取消");
 
                             }
                             if (keyCode == 215 && event.getAction() == KeyEvent.ACTION_UP) { //确认按键
-                                sendTouchEvent(742,475);
+                                sendTouchEvent(680,500);
                                 Log.i("按键输入", "dispatchKeyEvent: 输入确认");
                             }
                             Log.i("按键输入", "onKey: "+keyCode);
@@ -882,7 +882,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
             switch (count) {
                 case 1:
                     Toast.makeText(SimpleActivity.this, "放大按键", Toast.LENGTH_SHORT).show();
-                    AlertDialog.Builder builder9 = new AlertDialog.Builder(SimpleActivity.this) .setIcon(R.drawable.ring_icon);
+                    AlertDialog.Builder builder9 = new AlertDialog.Builder(SimpleActivity.this) .setIcon(R.drawable.ring_icon); //求救呼收
                     builder9.setTitle("收到求救通话请求");
                     View view2 = LayoutInflater.from(SimpleActivity.this).inflate(R.layout.dialog_send_qiujiu, null);
                     builder9.setView(view2);
@@ -909,12 +909,12 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                         @Override
                         public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
                             if (keyCode == 216 && event.getAction() == KeyEvent.ACTION_UP) { //取消按键,模拟点击屏幕取消按键的地点
-                                sendTouchEvent(678, 475);
+                                sendTouchEvent(540, 500);
                                 Log.i("按键输入", "dispatchKeyEvent: 输入取消");
 
                             }
                             if (keyCode == 215 && event.getAction() == KeyEvent.ACTION_UP) { //确认按键
-                                sendTouchEvent(742,475);
+                                sendTouchEvent(600,490);
                                 Log.i("按键输入", "dispatchKeyEvent: 输入确认");
                             }
                             Log.i("按键输入", "onKey: "+keyCode);
