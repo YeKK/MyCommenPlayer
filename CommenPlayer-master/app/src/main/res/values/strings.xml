@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">CommenPlayer</string>
+
+    <string name="url1" translatable="false">udp://@192.168.1.100:12000</string>
+    <string name="url2" translatable="false">udp://@192.168.0.102:5002</string>
+    <string name="url3" translatable="false">udp://@192.168.0.112:5012</string>
+    <string name="url4" translatable="false">udp://@192.168.1.104:5004</string>`
+    <string name="url5" translatable="false">udp://@192.168.1.105:5005</string>
+    <string name="url6" translatable="false">udp://@192.168.1.106:5006</string>
+    <string name="url7" translatable="false">.rtsp://184.72.239.149/vod/mp4://BigBuckBunny_175k.mov</string>
+    <string name="url8" translatable="false">rtmp://live.hkstv.hk.lxdns.com/live/hks</string>
+
+
+    <string name="select_serial_port" translatable="false">串口设备:</string>
+    <string name="select_baud_rate" translatable="false">波特率</string>
+    <string name="open_serial_port" translatable="false">打开串口</string>
+    <string name="close_serial_port" translatable="false">关闭串口</string>
+    <string name="no_serial_device" translatable="false">找不到串口设备</string>
+    <string name="send_data" translatable="false">发送命令</string>
+    <string name="input_data" translatable="false">输入命令</string>
+    <string name="load_cmd_list" translatable="false">加载命令列表</string>
+</resources>

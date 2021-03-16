@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/rlyt_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:background="#aaafff"
+                android:layout_below="@id/bmapView"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="#aaafff"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/imag"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag"
+                        android:id="@+id/tv_switcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#aaafff"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/imag2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag2"
+                        android:id="@+id/tv_switcher2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#aaafff"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+                    <ImageView
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/imag3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag3"
+                        android:id="@+id/tv_switcher3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/statusinfo"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:text="时间速度等状态信息"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/statusinfo"
+                android:background="@color/colorPrimary"
+                android:text="天气预报紧急通知"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="选呼"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="群呼"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="短信"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="扫描"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="电话"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="亮度"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="放大"
+            android:textSize="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="缩小"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 配置的是list中播放窗口的情况 -->
+    <com.d.lib.commenplayer.adapter.AdapterPlayer
+        android:id="@+id/aplayer"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/colorBlack" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5" />
+</LinearLayout>

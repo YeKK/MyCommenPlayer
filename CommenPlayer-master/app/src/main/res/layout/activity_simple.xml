@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/rlyt_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.d.lib.commenplayer.CommenPlayer
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@color/colorBlack" />
+
+            <LinearLayout
+                android:background="#6495ED"
+                android:layout_below="@id/player"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="#6495ED"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <ImageView
+                        android:src="@mipmap/company"
+                        android:id="@+id/imag"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag"
+                        android:id="@+id/tv_switcher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#6495ED"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <ImageView
+                        android:src="@mipmap/company"
+                        android:id="@+id/imag2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag2"
+                        android:id="@+id/tv_switcher2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#6495ED"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <ImageView
+                        android:src="@mipmap/company"
+                        android:id="@+id/imag3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag3"
+                        android:id="@+id/tv_switcher3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#6495ED"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <ImageView
+                        android:src="@mipmap/company"
+                        android:id="@+id/imag4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag4"
+                        android:id="@+id/tv_switcher4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:background="#6495ED"
+                    android:gravity="left"
+                    android:layout_gravity="left"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <ImageView
+                        android:src="@mipmap/company"
+                        android:id="@+id/imag5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <TextSwitcher
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/imag5"
+                        android:id="@+id/tv_switcher5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </TextSwitcher>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/statusinfo"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:background="@color/colorBlue"
+                android:orientation="horizontal">
+
+                <ImageView
+                android:layout_width="58dp"
+                android:layout_height="29dp"
+                android:background="@drawable/speak" />
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/ais" />
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/wifi" />
+
+                <ImageView
+                    android:layout_width="58dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/shouyinji" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rili"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/statusinfo"
+                android:text="日历"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/shijian"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/rili"
+                android:background="@color/colorBlue"
+                android:text="时间"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/nongli"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/shijian"
+                android:text="农历"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/diantaihao"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/nongli"
+                android:text="电台号：123456789"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/xindaohao"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/diantaihao"
+                android:text="信道号：198"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/chuanwei"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/xindaohao"
+                android:text="船位：123°45′67″E"
+                android:gravity="center"
+                android:textSize="30dp"/>
+            <TextView
+                android:id="@+id/hangsu"
+                android:background="@color/colorBlue"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@id/chuanwei"
+                android:text="航速：18海里/小时"
+                android:gravity="center"
+                android:textSize="30dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/hangsu"
+                android:layout_marginTop="0dp"
+                android:background="#1E90FF"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tianqiyubao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="晴天 温度：12-20℃"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/jinjitongzhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紧急通知：无"
+                    android:textColor="#FF0000"
+                    android:textSize="30dp" />
+
+
+                <TextView
+                    android:id="@+id/conmiustatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通话状态：通话断开"
+                    android:textSize="30dp" />
+
+
+                <TextView
+                    android:id="@+id/timeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通话时间：00:00:00"
+                    android:textSize="30dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:background="#B0C4DE">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            android:visibility="gone">-->
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_data"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/default_button_height"-->
+<!--                android:digits="0123456789abcdefABCDEF"-->
+<!--                android:hint="@string/input_data"-->
+<!--                android:inputType="textCapCharacters"-->
+<!--                android:singleLine="true"-->
+<!--                android:textSize="@dimen/edit_text_size" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_send_data"-->
+<!--                style="@style/ButtonStyle"-->
+<!--                android:text="@string/send_data" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_load_list"-->
+<!--                style="@style/ButtonStyle"-->
+<!--                android:text="@string/load_cmd_list" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <include-->
+<!--            layout="@layout/include_fragment_container"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:visibility="gone"/>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button1"
+            android:text="选呼"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button2"
+            android:text="群呼"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button3"
+            android:text="短信"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="扫描"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button5"
+            android:text="电话"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button6"
+            android:text="亮度"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button7"
+            android:text="放大"
+            android:textSize="30dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:id="@+id/button8"
+            android:text="缩小"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
