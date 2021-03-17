@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name" translatable="false">CommenPlayer</string>
 
-    <string name="url1" translatable="false">udp://@192.168.1.100:12000</string>
+    <string name="url1" translatable="false">udp://@192.168.1.101:12000</string>
     <string name="url2" translatable="false">udp://@192.168.0.102:5002</string>
     <string name="url3" translatable="false">udp://@192.168.0.112:5012</string>
     <string name="url4" translatable="false">udp://@192.168.1.104:5004</string>`

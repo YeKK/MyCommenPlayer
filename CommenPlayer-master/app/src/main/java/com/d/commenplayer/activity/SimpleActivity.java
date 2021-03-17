@@ -87,6 +87,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
     private int seconds = 0; //计时时间
     private TextView textView_timer;
     private TextView textView_ComStatus;
+    private TextView pptanjian;
 
     private TextView timeUpdate; //显示时间
     private String timeupdate;
@@ -129,6 +130,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
     private void initCommucationView() {
         textView_timer = findViewById(R.id.timeCount);
         textView_ComStatus = findViewById(R.id.conmiustatus);
+        pptanjian = findViewById(R.id.PPTanjian);
         textView_ComStatus.setText("无通话");
     }
 
@@ -728,6 +730,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
             switch (count) {
                 case 1:
                     Toast.makeText(SimpleActivity.this, "电话按键", Toast.LENGTH_SHORT).show();
+                    pptanjian.setText("语音正在发射");
                     break;
                 case 2:
                     sendData(sendMingling_nodata(3, "18"));
@@ -893,7 +896,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                         public void onClick(DialogInterface dialog, int which)
                         {
                             sendData(sendMingling_nodata(3, "35"));
-                            textView_ComStatus.setText("求救通话中，点击取消挂断");
+                            textView_ComStatus.setText("选呼通话中，按取消挂断");
                             running = true;
                         }
                     });
@@ -1139,6 +1142,7 @@ public class SimpleActivity extends Activity implements NetBus.OnNetListener {
                 running = false;
                 seconds = 0;
                 textView_ComStatus.setText("通话状态：通话断开");
+                pptanjian.setText(" ");
                 Toast.makeText(SimpleActivity.this, "通话挂断", Toast.LENGTH_SHORT).show();
             }
 
